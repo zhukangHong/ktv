@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_1528294457146">
+ 
+ 
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>first.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Queryservlet</servlet-name>
+  	<servlet-class>com.kb.Queryservlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Queryservlet</servlet-name>
+  
+  	 <url-pattern>*.action</url-pattern>
+  	 
+  </servlet-mapping>
+  
+  
+
+<!--  
+   <servlet>
+    <servlet-name>del</servlet-name>
+    <servlet-class>com.kb.struts.DelSongServ</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>del</servlet-name>
+    <url-pattern>/del.do</url-pattern>
+  </servlet-mapping>  
+  
+ -->
+  
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>  
+  
+  
+   <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.kb.UploadServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>

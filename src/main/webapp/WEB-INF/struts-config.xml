@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+<form-beans>
+<form-bean  name="LoginForm" type="com.kb.struts.LoginActionFrom"/>
+<form-bean  name="LoginForm" type="com.kb.struts.LoginActionFrom"/>
+</form-beans>
+
+
+<action-mappings>
+<action path="/login" type="com.kb.struts.LoginAction" 
+name="LoginForm" scope="request"
+>
+<forward name="success" path="/index.jsp"/>
+<forward name="error" path="/login_error.jsp"/>
+
+</action>
+
+<action path="/del" type="com.kb.struts.DelSongServ" 
+name="LoginForm" scope="request"
+>
+<forward name="delsuccess" path="/index.jsp"/>
+<forward name="delerror" path="/login_error.jsp"/>
+
+</action>
+
+
+<action path="/add" type="com.kb.struts.AddSingerServ" 
+name="LoginForm" scope="request"
+>
+<forward name="delsuccess" path="/index.jsp"/>
+<forward name="delerror" path="/login_error.jsp"/>
+
+</action>
+
+
+
+<action path="/dels" type="com.kb.struts.DelSingerServ" 
+name="LoginForm" scope="request"
+>
+<forward name="delsuccess" path="/index.jsp"/>
+<forward name="delerror" path="/login_error.jsp"/>
+
+</action>
+
+</action-mappings>
+
+
+
+
+
+
+
+
+</struts-config>
+

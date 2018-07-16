@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.kb">
+	 <class name="Song" table="t_song">
+	 <id name="id">
+	 	<generator class="native">
+	 	</generator>
+	 </id>
+	  <property name="song_name" unique-key="dealer_prod"/>
+	  
+	  <property name="pingyin"/>
+	 
+	   <property name="type"/>
+	   
+	 <many-to-one name="singer_name" column="singerid" cascade="all" class="com.kb.Singer" unique-key="dealer_prod"/>
+	   
+	 </class>
+
+	
+	
+</hibernate-mapping>

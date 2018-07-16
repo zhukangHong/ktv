@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.kb">
+	 <class name="Singer" table="t_singer">
+	 <id name="id">
+	 	<generator class="native">
+	 	</generator>
+	 </id>
+	  <property name="singer_name" unique-key="dealer_prod"/>
+	  
+	  <property name="pingyin"/>
+	 	
+	   
+	  <set name="songs" inverse="true" cascade="all">
+			<key column="singerid"/>
+			<one-to-many class="Song"/>
+		</set>
+	   
+	 </class>
+
+	
+	
+</hibernate-mapping>
