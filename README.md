@@ -6,5 +6,5 @@ base on JavaWeb
 
 请修改**hibernate.hbm.xml**里的数据库名和密码
 
------
-用生存数据库.sql来创建数据库
+----
+用生成数据库.sql来创建数据库
